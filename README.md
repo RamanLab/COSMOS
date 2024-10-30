@@ -1,31 +1,53 @@
 # MonoVsCocultures
-Compares monocultures and cocultres in an identical environment to identify the optimal microbial system. The comparison is done across diverse environments anf the effect of various factors such as medium composition, community interaction, carbon source etc are analysed. 
 
-Masterscripts for the four environments – aerobicRich.m, aerobicMinimal.m, anaerobicRich.m, anaerobicMinimal.m
+This repository provides a computational framework for comparing **monocultures** and **co-cultures** in identical environments to identify the optimal microbial system. The analysis spans diverse environments, exploring factors such as **medium composition**, **community interactions**, and **carbon sources**.
 
-Effect of interactions – InteractionAnalysis.m
+---
 
-Effect of carbon source – CSanalysis.m
+## Key Scripts  
+- **Masterscripts for Four Environments:**
+  - `aerobicRich.m`  
+  - `aerobicMinimal.m`  
+  - `anaerobicRich.m`  
+  - `anaerobicMinimal.m`  
 
-Dynamin FBA – dFBACom.m
+- **Effect of Interactions:**  
+  `InteractionAnalysis.m`  
 
-Comparison based on productivity – ProductivityAnalysis.m
+- **Effect of Carbon Source:**  
+  `CSanalysis.m`  
 
-Compare based on yield – YieldAnalysis.m
+- **Dynamic Flux Balance Analysis (dFBA):**  
+  `dFBACom.m`  
 
-Optimize biomass ratio – optBiomassRatio.m
+- **Productivity Comparison:**  
+  `ProductivityAnalysis.m`  
 
-Validation with experimental study – validation_SoKp.m
+- **Yield Comparison:**  
+  `YieldAnalysis.m`  
 
-All models used in this analysis were sourced from the BiGG Models and BioModels databases. Some annotations were adjusted to maintain consistency across the dataset.
+- **Biomass Ratio Optimization:**  
+  `optBiomassRatio.m`  
 
-Prerequisites
+- **Experimental Validation:**  
+  `validation_SoKp.m`  
 
-All simulations were performed in MATLAB R2018a (MathWorks Inc., USA) using:
+---
 
-    COBRA Toolbox v3.0
-    IBM ILOG CPLEX 12.8
+## Models Used  
+All models were obtained from the **BiGG Models** and **BioModels** databases. Some annotations were adjusted to ensure consistent formatting across the dataset.
 
-Research Article Link: 
+---
 
-All the analysis were performed on MATLAB R2018a and COBRAToolbox v.3.0 and IBM Cplex 12.8 solver.
+## Prerequisites  
+Simulations were conducted in **MATLAB R2018a** using:  
+- **COBRA Toolbox v3.0**  
+- **IBM ILOG CPLEX 12.8**  
+
+---
+
+## How to Use  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/MonoVsCocultures.git
+
