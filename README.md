@@ -5,7 +5,7 @@ This repository provides a computational framework for comparing **monocultures*
 ---
 
 ## Key Scripts  
-- **Masterscripts for Four Environments (effect of medium composition and oxygen availability:**
+- **Masterscripts for Four Environments (effect of medium composition and oxygen availability):**
   - `aerobicRich.m`  
   - `aerobicMinimal.m`  
   - `anaerobicRich.m`  
