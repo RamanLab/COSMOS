@@ -1,6 +1,6 @@
-# MonoVsCocultures
+# COSMOS - COmmunity and Single Microbe Optimization System
 
-This repository provides a computational framework for comparing **monocultures** and **co-cultures** in identical environments to identify the optimal microbial system. The analysis spans diverse environments, exploring factors such as **medium composition**, **community interactions**, and **carbon sources**.
+COSMOS provides a computational framework for comparing **monocultures** and **co-cultures** in identical environments to identify the optimal microbial system. The analysis spans diverse environments, exploring factors such as **medium composition**, **community interactions**, and **carbon sources**.
 
 ---
 
@@ -40,14 +40,18 @@ All models were obtained from the **BiGG Models** and **BioModels** databases. S
 ---
 
 ## Prerequisites  
-Simulations were conducted in **MATLAB R2018a** using:  
-- **COBRA Toolbox v3.0**  
-- **IBM ILOG CPLEX 12.8**  
+- **MATLAB**
+- **COBRA Toolbox**  
+- **IBM ILOG CPLEX**
+
+All simulations were conducted using **MATLAB R2018a**, **COBRA Toolbox v3.0**, and **IBM ILOG CPLEX 12.8**.
+
+Please use the *fluxVariability* function instead of *fastFVA* for other solvers.
 
 ---
 
 ## How to Use  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/MonoVsCocultures.git
+   git clone https://github.com/COSMOS.git
 
