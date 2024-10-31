@@ -17,7 +17,7 @@ This repository provides a computational framework for comparing **monocultures*
 - **Effect of Carbon Source:**  
   `CSanalysis.m`  
 
-- **Dynamic Flux Balance Analysis (dFBA):**  
+- **dynamic Flux Balance Analysis (dFBA):**  
   `dFBACom.m`  
 
 - **Productivity Comparison:**  
