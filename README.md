@@ -46,7 +46,7 @@ All models were obtained from the **BiGG Models** and **BioModels** databases. S
 
 All simulations were conducted using **MATLAB R2018a**, **COBRA Toolbox v3.0**, and **IBM ILOG CPLEX 12.8**.
 
-Please use the *fluxVariability* function instead of *fastFVA* for other solvers.
+We recommend the ibm_cplex solver as COSMOS uses *fastFVA* for efficiency.
 
 ---
 
