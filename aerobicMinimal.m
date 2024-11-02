@@ -16,7 +16,7 @@ spNameList = {'Ecoli','Scerevisiae','Pputida','Llactis','Bsubtilis','Scystis','P
 [Communities,pairedModelInfo] = createPairwiseCommunity(speciesList,biomassList,spNameList);
 
 %define minimal medium
-options.mediumMets = {'glc__D_e[u]';'4abz_e[u]'; 'btn_e[u]'; 'ca2_e[u]';'cbl1_e[u]';'cl_e[u]';'cobalt2_e[u]';'cu2_e[u]';'fe2_e[u]';'fe3_e[u]';'fol_e[u]';'h2_e[u]';'h2o_e[u]';'k_e[u]';'mg2_e[u]';'mn2_e[u]';'mobd_e[u]';'na1_e[u]';'ncam_e[u]';'nh4_e[u]';'ni2_e[u]';'no3_e[u]';'o2_e[u]';'pi_e[u]';'pnto__R_e[u]';'ribflv_e[u]';'ura_e[u]';'h2s_e[e]';'so4_e[u]';'zn2_e[u]';'sel_e[u]';'thm_e[u]';'glu__L_e[u]';'leu__L_e[u]';'thr__L_e[u]';'val__L_e[u]';'ile__L_e[u]';'arg__L_e[u]';'ser__L_e[u]';'nac_e[u]';'so3_e[u]';'ala__L_e[u]';'pydx_e[u]'};
+options.mediumMets = {'glc__D_e[u]';'4abz_e[u]'; 'btn_e[u]'; 'ca2_e[u]';'cbl1_e[u]';'cl_e[u]';'cobalt2_e[u]';'cu2_e[u]';'fe2_e[u]';'fe3_e[u]';'fol_e[u]';'h2_e[u]';'h2o_e[u]';'k_e[u]';'mg2_e[u]';'mn2_e[u]';'mobd_e[u]';'na1_e[u]';'ncam_e[u]';'nh4_e[u]';'ni2_e[u]';'no3_e[u]';'o2_e[u]';'pi_e[u]';'pnto__R_e[u]';'ribflv_e[u]';'ura_e[u]';'h2s_e[e]';'so4_e[u]';'zn2_e[u]';'sel_e[u]';'xan_e[u]';'thm_e[u]';'glu__L_e[u]';'leu__L_e[u]';'thr__L_e[u]';'val__L_e[u]';'ile__L_e[u]';'arg__L_e[u]';'ser__L_e[u]';'nac_e[u]';'so3_e[u]';'ala__L_e[u]'};
 options.carbonSource = 'glc__D_e[u]';
 
 %define medium concentration
