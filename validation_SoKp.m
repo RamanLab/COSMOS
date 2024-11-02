@@ -23,9 +23,13 @@ options.orgCount = length(speciesList);
 [options.Vmax,options.Km] = deal(zeros(length(options.mediumMets),1));
 options.Vmax(:) = 20;
 options.Km(:) = 0.05;
+
+%define size of timestep and total time
 options.delt = 0.1;
-options.carbonSource = 'glyc_e[u]';
 options.maxTime = 100;
+options.solver = 'ibm_cplex';
+
+options.carbonSource = 'glyc_e[u]';
 biomassRatios = [0.066 0.133; 0.1 0.1; 0.133 0.066; 0.15 0.05];
 
 % Store results for Pareto front computation
