@@ -34,6 +34,7 @@ options.Km(:) = 0.05;
 %define size of timestep and total time
 options.delt = 0.1;
 options.maxTime = 12;
+options.solver = 'ibm_cplex';
 
 %define initial biomass concentration
 options.initBiomass = [0.1,0.1];
@@ -53,8 +54,8 @@ allResults = cell(1, size(Communities, 2));
 
 parfor i= 1 : size(Communities,2)
     restoreEnvironment(environment);
-    solverOK = changeCobraSolver('ibm_cplex','all'); %to use fastFVA
-    allResults{i} = dFBACom(Communities{1,i},options); %uses fastFVA - use fluxVariability for other solvers
+    solverOK = changeCobraSolver(options.solver,'all'); 
+    allResults{i} = dFBACom(Communities{1,i},options); %uses fastFVA with ibm_cplex and fluxVariability for other solvers
 end
 
 %compile community results using abundance cutoff
