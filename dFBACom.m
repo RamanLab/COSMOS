@@ -90,14 +90,22 @@ for timeStep = 1: round(options.maxTime/options.delt,0)
                     end
                     if i==1 && prdtID(k,i)~=0
                         prdtRxns(k,1) = model.infoCom.EXsp(prdtID(k,1),1);
-                        [~, maxFlux1] = fastFVA(model, 90, 'max','ibm_cplex',prdtRxns(k,1));
+                        if options.solver == 'ibm_cplex'
+                            [~, maxFlux1] = fastFVA(model, 90, 'max','ibm_cplex',prdtRxns(k,1));
+                        else
+                            [~, maxFlux1] = fluxVariability(model, 90, 'max',prdtRxns(k,1));
+                        end
                         if ~isempty(maxFlux1) && ~isnan(maxFlux1)
                             prdtFVAConc1(k,temp) = maxFlux1*biomass(i)*options.delt;
                         end
                     end
                     if i==2 && prdtID(k,i)~=0
                         prdtRxns(k,2) = model.infoCom.EXsp(prdtID(k,2),2);
-                        [~, maxFlux2] = fastFVA(model, 90, 'max','ibm_cplex',prdtRxns(k,2));
+                        if options.solver=='ibm_cplex
+                            [~, maxFlux2] = fastFVA(model, 90, 'max','ibm_cplex',prdtRxns(k,2));
+                        else
+                            [~, maxFlux2] = fluxVariability(model, 90, 'max',prdtRxns(k,2));
+                        end
                         if ~isempty(maxFlux2) && ~isnan(maxFlux2)
                             prdtFVAConc2(k,temp) = maxFlux2*biomass(i)*options.delt;
                         end
