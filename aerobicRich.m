@@ -55,7 +55,7 @@ allResults = cell(1, size(Communities, 2));
 parfor i= 1 : size(Communities,2)
     restoreEnvironment(environment);
     solverOK = changeCobraSolver(options.solver,'all'); 
-    allResults{i} = dFBACom(Communities{1,i},options); %uses fastFVA with ibm_cplex and fluxVariability for other solvers
+    allResults{i} = dFBACom(Communities{1,i},options); %uses fastFVA with ibmcplex and fluxVariability for other solvers
 end
 
 %compile community results using abundance cutoff
