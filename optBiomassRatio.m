@@ -33,6 +33,7 @@ options.Km(:) = 0.05;
 %define size of timestep and total time
 options.delt = 0.1;
 options.maxTime = 12;
+options.solver = 'ibm_cplex';
 
 %define the minimum %improvement in biomass and abundance required for
 %communityto be considered viable
