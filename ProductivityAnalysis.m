@@ -110,7 +110,7 @@ for i=1:size(CommunityResults,2)
             abdSys{j} = 1;
         elseif index1==3
             OptSys{j} = CommunityResults{1,i}.modelName;
-            abdSys{j,1} = CommunityResults{1,i}.abundance;
+            abdSys{j} = CommunityResults{1,i}.abundance;
         end
         
     end
