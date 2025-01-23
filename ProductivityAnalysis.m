@@ -69,7 +69,7 @@ for i=1:size(CommunityResults,2)
             prdtRatio(j) = 1000;
             prdtChange(j) = 1;
         elseif abs(monoprdt1(j)+monoprdt2(j)) > 0.0001 && abs(commprdt(j)) < 0.0001
-            prdtRatio(j) = ((commprdt(j)-max(monoprdt1(j),monoprdt2(j)))/abs(max(monoprdt1(j),monoprdt2(j))));                      prdtChange(j) = -1;
+            prdtRatio(j) = ((commprdt(j)-max(monoprdt1(j),monoprdt2(j)))/abs(max(monoprdt1(j),monoprdt2(j))));
             prdtChange(j) = -1;
         elseif abs(monoprdt1(j)+monoprdt2(j)) > 0.0001 && abs(commprdt(j)) > 0.0001
             prdtRatio(j) = ((commprdt(j)-max(monoprdt1(j),monoprdt2(j)))/abs(max(monoprdt1(j),monoprdt2(j))));
