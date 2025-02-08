@@ -30,8 +30,10 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
   `optBiomassRatio.m`  
 
 - **Experimental Validation:**  
-  `validation_SoKp.m`  
+  `validation_SoKp.m`
 
+- **Collating data from all four environments for statistical analysis:**  
+  `StatDataAnalysis.m` and `CS_StatDataAnalysis.m`
 ---
 
 ## Models Used  
