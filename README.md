@@ -9,7 +9,8 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
   - `aerobicRich.m`  
   - `aerobicMinimal.m`  
   - `anaerobicRich.m`  
-  - `anaerobicMinimal.m`  
+  - `anaerobicMinimal.m`
+ Initial inputs like models and parameters (environment and kinetic) can be changed by manipulating these files.
 
 - **Effect of Interactions:**  
   `InteractionAnalysis.m`  
@@ -18,19 +19,21 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
   `CSanalysis.m`  
 
 - **dynamic Flux Balance Analysis (dFBA):**  
-  `dFBACom.m`  
+  `dFBACom.m`
 
 - **Productivity Comparison:**  
   `ProductivityAnalysis.m`  
 
 - **Yield Comparison:**  
   `YieldAnalysis.m`  
+  All the results in the paper are based on productivity comparison. Alternatively one can use yield comparison if required.
 
 - **Biomass Ratio Optimization:**  
   `optBiomassRatio.m`  
 
 - **Experimental Validation:**  
   `validation_SoKp.m`
+  To validate the algorithm by comparison with the experiments in https://doi.org/10.1186/s13068-023-02304-4
 
 - **Collating data from all four environments for statistical analysis:**  
   `StatDataAnalysis.m` and `CS_StatDataAnalysis.m`
@@ -48,6 +51,7 @@ All models were obtained from the **BiGG Models** and **BioModels** databases. S
 
 All simulations were conducted using **MATLAB R2018a**, **COBRA Toolbox v3.0**, and **IBM ILOG CPLEX 12.8**.
 
+Please initialise the COBRA Toolbox and the solver before running COSMOS
 We recommend the ibm_cplex solver as COSMOS uses *fastFVA* for efficiency.
 
 ---
