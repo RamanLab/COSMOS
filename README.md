@@ -33,6 +33,7 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
 
 - **Experimental Validation:**  
   `validation_SoKp.m`
+  
   To validate the algorithm by comparison with the experiments in https://doi.org/10.1186/s13068-023-02304-4
 
 - **Collating data from all four environments for statistical analysis:**  
