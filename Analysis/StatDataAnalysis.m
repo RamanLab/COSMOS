@@ -38,4 +38,4 @@ for i = 1:length(Environments)
     end
 end
 % to write the data
- xlswrite('TotalData.xls', [Header;Data]);
+ writecell([Header;Data], 'TotalData.xls', 'Sheet','Data_AllEnv');
