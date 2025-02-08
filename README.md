@@ -13,14 +13,16 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
   
    Initial inputs like models and parameters (environment and kinetic) can be changed by manipulating these files.
 
-- **Effect of Interactions:**  
-  `InteractionAnalysis.m`  
-
 - **Effect of Carbon Source:**  
   `CSanalysis.m`  
 
+  Masterscript for carbon source analysis in aerobic rich environment. Change the parameters for other environments as found in the above masterscripts.
+  
 - **dynamic Flux Balance Analysis (dFBA):**  
   `dFBACom.m`
+  
+- **Effect of Interactions:**  
+  `InteractionAnalysis.m`  
 
 - **Productivity Comparison:**  
   `ProductivityAnalysis.m`  
