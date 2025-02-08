@@ -10,7 +10,8 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
   - `aerobicMinimal.m`  
   - `anaerobicRich.m`  
   - `anaerobicMinimal.m`
- Initial inputs like models and parameters (environment and kinetic) can be changed by manipulating these files.
+  
+   Initial inputs like models and parameters (environment and kinetic) can be changed by manipulating these files.
 
 - **Effect of Interactions:**  
   `InteractionAnalysis.m`  
@@ -25,7 +26,8 @@ COSMOS provides a computational framework for comparing **monocultures** and **c
   `ProductivityAnalysis.m`  
 
 - **Yield Comparison:**  
-  `YieldAnalysis.m`  
+  `YieldAnalysis.m`
+  
   All the results in the paper are based on productivity comparison. Alternatively one can use yield comparison if required.
 
 - **Biomass Ratio Optimization:**  
