@@ -8,9 +8,9 @@ Productivity_header = {'Community Name','Productivity','Abundance A','Abundance 
 %write the data
 xlswrite('results.xls', pairwiseInteractions, 'Communities');
 
-xlswrite('results.xls', InteractionGeneric, 'InteractionGeneric');
+xlswrite('results.xls', interactionGeneric, 'InteractionGeneric');
 
-xlswrite('results.xls', InteractionSpecific, 'InteractionSpecific');
+xlswrite('results.xls', interactionSpecific, 'InteractionSpecific');
 
 xlswrite('results.xls', [TopOrgs_header; BestSystem.TopOrgs], 'TopOrganisms');
 
