@@ -39,3 +39,26 @@ for i = 1:length(Environments)
 end
 % to write the data
  writecell([Header;Data], 'TotalData.xls', 'Sheet','Data_AllEnv');
+
+ %to collate productivity values of communities and monocultures
+HeaderValue = {'Environment','System','Product','Productivity_Value'};
+DataValue={}; tempA=0;
+
+for i = 1:length(Environments)
+    PrdtAnalysis = PrdtAnalysisEnv{1,i};
+    for j = 1:length(PrdtAnalysis)
+        
+        DataValue(tempA+1 : tempA+length(options.ProductName),4) = num2cell(PrdtAnalysis{1,j}.commprdt);
+        DataValue(tempA+1 : tempA+length(options.ProductName),3) = options.ProductName;
+        DataValue(tempA+1 : tempA+length(options.ProductName),2) = {'Community'};
+        DataValue(tempA+1 : tempA+length(options.ProductName),1) = Environments(i);          
+        tempA = tempA+length(options.ProductName);
+        DataValue(tempA+1 : tempA+length(options.ProductName),4) = num2cell(PrdtAnalysis{1,j}.monoprdt);
+        DataValue(tempA+1 : tempA+length(options.ProductName),3) = options.ProductName;
+        DataValue(tempA+1 : tempA+length(options.ProductName),2) = {'Monoculture'};
+        DataValue(tempA+1 : tempA+length(options.ProductName),1) = Environments(i); 
+        tempA = tempA+length(options.ProductName);
+    end
+end
+% write the data
+  writecell([HeaderValue;DataValue],'ProductivityValue.xls','Sheet','CommMono');
