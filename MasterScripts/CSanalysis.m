@@ -125,4 +125,8 @@ parfor cs = 1:length(carbonSourceList)
     CSResults{cs}.MonoResults = MonoResults;
     CSResults{cs}.singleModelInfo = singleModelInfo;
     CSResults{cs}.rawResults = allResults;
+    clearAllMemoizedCaches
 end
+
+%save results
+save('CSaerRich.mat');
