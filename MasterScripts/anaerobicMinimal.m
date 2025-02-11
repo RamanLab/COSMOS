@@ -79,3 +79,7 @@ if ~isempty(CommunityResults) && ~isempty(MonoResults)
 else
     disp('No viable communities found, so comparison analysis was not performed');
 end
+
+%save and write results
+save('anaerMin.mat');
+writeResultsToExcel('anaerMinResults.xls','anaerMin.mat')
