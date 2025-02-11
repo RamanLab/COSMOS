@@ -76,3 +76,6 @@ else
     disp('No viable communities found, so comparison analysis was not performed');
 end
 
+%save and write results
+save('aerRich.mat');
+writeResultsToExcel('aerRichResults.xls','aerRich.mat')
